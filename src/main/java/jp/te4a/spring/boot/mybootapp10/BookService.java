@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp9;
+package jp.te4a.spring.boot.mybootapp10;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,7 @@ public class BookService {
 		return formList;
 	}
 	
-	public BookForm findOne(Integer id) {
+	public BookForm findAll(Integer id) {
 		Optional<BookBean> bookBean = bookRepository.findById(id);
 		BookForm bookForm = new BookForm();
 		BeanUtils.copyProperties(bookBean, bookForm);

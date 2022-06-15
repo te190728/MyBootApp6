@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp9;
+package jp.te4a.spring.boot.mybootapp10;
 
 import org.springframework.stereotype.Repository;
 
@@ -12,8 +12,5 @@ public interface BookRepository extends JpaRepository<BookBean, Integer>{
 	@Query("SELECT X FROM BookBean X ORDER BY X.title")
 	  List<BookBean> findAllOrderByTitle();
 
-	BookBean findOne(Integer id);
 
-	 
-	
 }

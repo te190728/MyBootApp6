@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp9;
+package jp.te4a.spring.boot.mybootapp10;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +35,7 @@ public class BookController {
   
   @PostMapping(path = "edit", params = "form")
   String editForm(@RequestParam Integer id, BookForm form) {
-    BookForm bookForm = bookService.findOne(id);
+    BookForm bookForm = bookService.findAll(id);
     BeanUtils.copyProperties(bookForm,  form);
     return "books/edit";
   }

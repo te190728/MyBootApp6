@@ -1,4 +1,4 @@
-package jp.te4a.spring.boot.mybootapp9;
+package jp.te4a.spring.boot.mybootapp10;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class BookForm {
   private Integer id ;
   private String title;
-  private String writter;
+  private String writer;
   private String publisher;
   private Integer price;
 }
